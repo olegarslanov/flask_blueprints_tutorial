@@ -1,0 +1,21 @@
+Kaip paleisti programa:
+1. atidarau terminale folder "flask_blueprints_tutorial"
+2. terminale ivedu: 
+export FLASK_APP=app (Flask iesko folderyje "app" FLASK fabriko funcija)
+flask run --debug
+
+Programos kurimo eiga:
+1. Sukuriam Flask prog konfiguracija (atskiru failu) "config.py". Naudojama nustatyti SECRET_KEY, SQLALCHEMY_DATABASE_URI ir t.t.
+2. Sukuriam Flask aplikaciju fabriko funkcija. Sukuriam folderi "app". Kad padaryti folderi Python paketu sukuriam viduje "__init__.py". Failas tures savyje koda FLASK fabriku funkcijai(kuri naudojama Flask egzemplioriui kurti ir kad sujungti visus blueprint kartu)
+3. Reikia sukurti pagrindiniu marsrutu schema ir sablonus. "app" folderyje sukuriam folderi "main" o jame "__init__.py"
+4. Reikia informuoti Flask apie nauja schema ir marsruta. Folderyje app/__init__.py redaguoti funkcija create_app, dadedant flasko objekta ir metoda, kurie bus jau kaip aplikacijos dalis
+5. Kuriam templates. Kuriam base.htmal ir index.htmal
+6. Turiu jau adresu http://127.0.0.1:5000/ paprasta tinklapi su meniu juosta.
+7. Kartuojam veiksmus su "posts"
+
+
+
+
+
+Detalus pvz.:
+https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy

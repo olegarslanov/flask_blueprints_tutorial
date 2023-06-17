@@ -1,0 +1,2 @@
+python -m flask run -  yra komanda, kuri paleidžia Flask programą. Ji naudojama terminalo (ar komandinės eilutės) aplinkoje, kai norite paleisti Flask programą, kuri yra jūsų projekto dalis.
+flask run 
